@@ -5,6 +5,10 @@ ruby "3.2.1"
 
 gem "dotenv-rails", groups: [:development, :tests]
 
+gem "brakeman"
+
+gem "bundler-audit"
+
 gem "rexml"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
