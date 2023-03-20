@@ -9,6 +9,8 @@ gem "brakeman"
 
 gem "bundler-audit"
 
+gem "lograge"
+
 gem "rexml"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
