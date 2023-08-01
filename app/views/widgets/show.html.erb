@@ -1,0 +1,9 @@
+<h1><%= @widget.name %></h1>
+<h2>ID #<%= @widget.id %></h2>
+<% if flash[:notice].present? %>
+  <aside>
+    <%= flash[:notice] %>
+  </aside>
+<% end %>
+
+<%= render partial: "rating", locals: { widget: @widget } %>
