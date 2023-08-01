@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
+  namespace :customer_service do
+    resources :widgets, only: [ :show, :update, :destroy ]
+  end
+
   get "/amazing", to: "widgets#index"
 end
