@@ -17,4 +17,24 @@ class ApplicationHelperTest < ActionView::TestCase
     assert_match regexp, rendered_component
     assert rendered_component.html_safe?
   end
+
+  test "widget_rating_component with CTA" do
+    widget = OpenStruct.new(id: 1234)
+    rendered_component = widget_rating_component(
+                           widget,
+                           suppress_cta: false)
+
+    assert_match /<section/m, rendered_component
+    assert rendered_component.html_safe?
+  end
+
+  test "widget_rating_component without CTA" do
+    widget = OpenStruct.new(id: 1234)
+    rendered_component = widget_rating_component(
+                           widget,
+                           suppress_cta: true)
+
+    assert_match /<section/m, rendered_component
+    assert rendered_component.html_safe?
+  end
 end
