@@ -11,6 +11,10 @@ gem "bundler-audit"
 
 gem "lograge"
 
+gem "sassc-rails"
+
+gem "tachyonscss-rails"
+
 gem "rexml"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
